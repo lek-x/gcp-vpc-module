@@ -9,6 +9,8 @@ This module creates a Virtual Private Cloud (VPC) network in Google Cloud Platfo
 - Optionally creates a NAT gateway for private subnet instances to access the internet.
 - Creates Firewall rules for subnets
 
+## Requirements
+Terraform >= 1.9.8
 
 ## Usage
 
@@ -16,7 +18,7 @@ To use this module, include it in your Terraform configuration:
 
 ```terraform
 module "gcp-vpc" {
-  source  = "git::https://github.com/lek-x/gcp-vpc-module.git
+  source  = "git::https://github.com/lek-x/gcp-vpc-module.git"
   project   = "your-gcp-project-id"
   region = "your-gcp-region"
   zone = "your-gcp-zone"
